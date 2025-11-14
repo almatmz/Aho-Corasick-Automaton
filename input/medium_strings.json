@@ -1,5 +1,5 @@
 {
-  "dataset": "medium",
-  "pattern": "needle",
-  "text": "Finding a needle in a haystack might be tough, but another needle lies near the other needle we just found."
+  "dataset": "football_medium",
+  "pattern": "goal",
+  "text": "Real Madrid dominated possession and created chance after chance. Their first goal came from a quick one-two in the box; the second goal arrived from a set piece; a third goal was ruled out for offside. Late on, the substitute pressed high and forced an error that led to the winning goal."
 }

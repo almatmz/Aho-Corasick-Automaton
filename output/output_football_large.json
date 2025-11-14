@@ -1,0 +1,10 @@
+{
+  "dataset" : "football_large",
+  "pattern" : "goal",
+  "textLength" : 611,
+  "matches" : [ 64, 111, 155, 247, 307, 384, 487, 563, 594 ],
+  "charComparisons" : 617,
+  "fallbackSteps" : 6,
+  "lpsComputations" : 3,
+  "elapsedMillis" : 1.4148
+}

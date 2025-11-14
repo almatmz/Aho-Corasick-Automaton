@@ -1,0 +1,10 @@
+{
+  "dataset" : "football_small",
+  "pattern" : "goal",
+  "textLength" : 62,
+  "matches" : [ 17 ],
+  "charComparisons" : 62,
+  "fallbackSteps" : 0,
+  "lpsComputations" : 3,
+  "elapsedMillis" : 0.0099
+}

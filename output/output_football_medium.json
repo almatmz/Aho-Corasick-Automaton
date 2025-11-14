@@ -1,0 +1,10 @@
+{
+  "dataset" : "football_medium",
+  "pattern" : "goal",
+  "textLength" : 289,
+  "matches" : [ 78, 132, 171, 284 ],
+  "charComparisons" : 291,
+  "fallbackSteps" : 2,
+  "lpsComputations" : 3,
+  "elapsedMillis" : 0.0397
+}

@@ -9,9 +9,6 @@ import java.util.List;
  */
 public final class DatasetProcessor {
 
-    /**
-     * Input model for JSON.
-     */
     public static final class InputModel {
         public String dataset;
         public String pattern;
@@ -23,7 +20,9 @@ public final class DatasetProcessor {
         OperationCounter.reset();
         long start = System.nanoTime();
         List<Integer> matches = KMPMatcher.search(model.text, model.pattern);
-        long elapsed = System.nanoTime() - start;
+        long elapsedNanos = System.nanoTime() - start;
+
+        double elapsedMillis = elapsedNanos / 1_000_000.0;
 
         return new KMPResult(
                 model.dataset,
@@ -33,7 +32,7 @@ public final class DatasetProcessor {
                 OperationCounter.charComparisons,
                 OperationCounter.fallbackSteps,
                 OperationCounter.lpsComputations,
-                elapsed
+                elapsedMillis
         );
     }
 }

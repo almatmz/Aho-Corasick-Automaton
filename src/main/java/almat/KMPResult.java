@@ -4,6 +4,7 @@ import java.util.List;
 
 /**
  * Immutable result object capturing matches and instrumentation metrics.
+ * elapsedMillis is used (ms) instead of nanos.
  */
 public final class KMPResult {
     private final String dataset;
@@ -13,7 +14,7 @@ public final class KMPResult {
     private final long charComparisons;
     private final long fallbackSteps;
     private final long lpsComputations;
-    private final long elapsedNanos;
+    private final double elapsedMillis;
 
     public KMPResult(String dataset,
                      String pattern,
@@ -22,7 +23,7 @@ public final class KMPResult {
                      long charComparisons,
                      long fallbackSteps,
                      long lpsComputations,
-                     long elapsedNanos) {
+                     double elapsedMillis) {
         this.dataset = dataset;
         this.pattern = pattern;
         this.textLength = textLength;
@@ -30,7 +31,7 @@ public final class KMPResult {
         this.charComparisons = charComparisons;
         this.fallbackSteps = fallbackSteps;
         this.lpsComputations = lpsComputations;
-        this.elapsedNanos = elapsedNanos;
+        this.elapsedMillis = elapsedMillis;
     }
 
     public String getDataset() { return dataset; }
@@ -40,5 +41,9 @@ public final class KMPResult {
     public long getCharComparisons() { return charComparisons; }
     public long getFallbackSteps() { return fallbackSteps; }
     public long getLpsComputations() { return lpsComputations; }
-    public long getElapsedNanos() { return elapsedNanos; }
+
+    /**
+     * Elapsed time in milliseconds (may be fractional).
+     */
+    public double getElapsedMillis() { return elapsedMillis; }
 }

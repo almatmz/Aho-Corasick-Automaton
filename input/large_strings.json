@@ -1,5 +1,5 @@
 {
-  "dataset": "large",
-  "pattern": "history",
-  "text": "In his household, he cherished the moments when she would hum softly. Hers was a melody that lingered, and in those evenings, his heart would rest. Sometimes she spoke of histories—hers entwined with his—so that he felt there was no border between what she remembered and what he hoped for. He wished she understood how her silence carried weight, and how his words tried to bridge it. The history he carried differed from the history she guarded, yet the history they built together was evolving."
+  "dataset": "football_large",
+  "pattern": "goal",
+  "text": "From kickoff, the home side pressed with intent. After an early goal from a corner, they kept pushing; another goal came after a swift counter; a possible goal was denied by the crossbar.\n\nAfter the interval, the visitors equalized with a scrappy goal. Minutes later, a deflection gifted the hosts a second goal. The captain urged patience, and a late team move produced the decisive goal.\n\nIn stoppage time, the keeper rushed forward for a last attack; a looping header almost became a goal, but the keeper recovered. As the whistle blew, chants celebrated each goal and the work behind every goal in training."
 }

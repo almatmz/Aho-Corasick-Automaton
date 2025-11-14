@@ -1,4 +1,4 @@
-dataset,textLength,patternLength,matches,charComparisons,fallbackSteps,lpsComputations,elapsedNanos
-small,11,2,2,11,0,1,308000
-medium,107,6,3,113,6,5,53100
-large,497,7,3,538,41,6,219100
+dataset,textLength,patternLength,matches,charComparisons,fallbackSteps,lpsComputations,elapsedMillis
+football_large,611,4,9,617,6,3,1.415
+football_medium,289,4,4,291,2,3,0.040
+football_small,62,4,1,62,0,3,0.010

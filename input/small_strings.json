@@ -1,5 +1,5 @@
 {
-  "dataset": "small",
-  "pattern": "he",
-  "text": "she is here"
+  "dataset": "football_small",
+  "pattern": "goal",
+  "text": "Ronaldo scored a goal in the 89th minute as the crowd erupted."
 }
