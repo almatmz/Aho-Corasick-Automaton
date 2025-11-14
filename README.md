@@ -1,6 +1,6 @@
-# KMP String Matching — Football Datasets
+# KMP String Matching
 
-This project implements the Knuth–Morris–Pratt (KMP) string matching algorithm in Java (Maven), instruments the algorithm to count core operations, and validates the theoretical complexity with empirical results on football-themed datasets.
+This project implements the Knuth–Morris–Pratt (KMP) string matching algorithm in Java (Maven), instruments the algorithm to count core operations, and validates the theoretical complexity with empirical results on datasets.
 
 The current experiments search for the pattern `goal` (lowercase, case-sensitive) in three texts of different lengths: small, medium, and large.
 
