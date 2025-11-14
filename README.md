@@ -40,8 +40,7 @@ src/
   test/java/almat/
     KMPMatcherTest.java   # correctness + edge cases
     PerformanceTest.java  # empirical scaling via operation counts (stable)
-REPORT.md           # implementation & complexity discussion
-README.md           # this file
+README.md       
 pom.xml             # Maven config (JUnit, JaCoCo, Checkstyle, SpotBugs)
 ```
 
@@ -217,8 +216,3 @@ mvn test
     - fallbackSteps are very small (0–6) because “goal” has no self-overlap; KMP rarely needs to retreat along the LPS.
     - elapsedMillis is low and broadly proportional to input size, with normal variability from JIT/GC/OS scheduling.
 - Therefore, the experiments validate KMP’s O(n + m) time and O(m) space in practice.
-- When to use what:
-    - Single pattern: KMP (as here) is fast and memory-light.
-    - Many patterns at once: prefer Aho–Corasick.
-    - Probabilistic hashing or quick prototyping: Rabin–Karp (be mindful of collisions).
-    - Full-text indexing/offline queries: Suffix Array + Kasai for LCP.
