@@ -1,0 +1,4 @@
+dataset,textLength,patternLength,matches,charComparisons,fallbackSteps,lpsComputations,elapsedNanos
+small,11,2,2,11,0,1,308000
+medium,107,6,3,113,6,5,53100
+large,497,7,3,538,41,6,219100
